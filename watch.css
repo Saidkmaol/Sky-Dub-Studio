@@ -1,0 +1,308 @@
+/* Watch page styles */
+.watch-page {
+  padding: 40px 0;
+}
+
+.watch-page .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Top section styles */
+.top-section {
+  display: grid;
+  grid-template-columns: 280px 1fr; /* match card width from index.html */
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Poster side styles */
+.poster-side {
+  position: relative;
+}
+
+.poster {
+  position: relative;
+  width: 100%;
+  height: 420px; /* same visual height as .card min-height */
+  overflow: hidden;
+  border-radius: 22px; /* match card radius */
+  background-color:#171717;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Info side styles */
+.info-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-side .title {
+  font-size: 32px;
+  margin: 0;
+  color: var(--text);
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.info-item .label {
+  color: var(--muted);
+  min-width: 120px;
+  font-size: 16px;
+}
+
+.info-item .value {
+  color: var(--text);
+  font-size: 16px;
+}
+
+/* Genre dots */
+.info-item .value:has(+ .dot)::after {
+  content: " • ";
+  color: white;
+  margin: 0 8px;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.watch-btn {
+  background: #747474;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.watch-btn:hover {
+  background: #898989;
+}
+
+.favorite-btn {
+  width: 44px;
+  height: 44px;
+  background: #747474;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.favorite-btn:hover {
+  background: #898989;
+}
+
+/* Description section */
+.description {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.description h3 {
+  font-size: 24px;
+  margin: 0 0 16px 0;
+  color: var(--text);
+}
+
+.description p {
+  color: var(--text);
+  line-height: 1.8;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .top-section {
+    grid-template-columns: 250px 1fr;
+    gap: 32px;
+  }
+
+  .poster {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .poster {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .info-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info-item .label {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .poster {
+    height: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .info-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info-item .label {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .watch-page {
+    padding: 20px 0;
+  }
+
+  .description {
+    padding: 20px 0;
+  }
+
+  .poster {
+    height: 200px;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .info-side .title {
+    font-size: 24px;
+  }
+}
+
+/* Episodes section */
+.episodes-section {
+  margin: 40px 0;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.episodes-box {
+  background: #171717;
+  padding: 40px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.episode-card {
+  background: #292929;
+  padding: 32px;
+  border-radius: 8px;
+  position: relative;
+  aspect-ratio: 16/9;
+  min-height: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.episode-number {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+/* Episodes responsive */
+@media (max-width: 768px) {
+  .episodes-box {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .episodes-box {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .episode-card {
+    aspect-ratio: 2/1;
+  }
+}
