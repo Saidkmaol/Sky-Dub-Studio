@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Project</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <!-- Inline icon image (fallback to icons/logo.png if available) -->
+          <img src="/icons/logo.png" alt="Sky Logo" />
+          <span class="logo-text">Sky Dub Studio</span>
+        </div>
+        <ul class="nav">
+          <li><a style="color: var(--brand-color);" href="index.html">Главная</a></li>
+          <li><a href="/pages/Расписание.html">Расписание</a></li>
+          <li><a href="/pages/Releases.html">Релизы</a></li>
+        </ul>
+        <div class="search">
+          <div class="search-box">
+            <img src="/icons/search.png" alt="Search" />
+            <input type="text" placeholder="Введите название..." />
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="search-icon-btn" aria-label="Search">
+            <img src="/icons/search.png" alt="Search" />
+          </button>
+          <div class="search-box">
+            <img src="/icons/search.png" alt="Search" />
+            <input type="text" placeholder="Введите название..." />
+          </div>
+          <div class="account">
+            <a href="/pages/login.html"><img src="/icons/account.png" alt="Account" /></a>
+          </div>
+          <button class="burger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="container">
+        <div class="slide-number">1 / 4</div>
+        <h1 class="Name">Название слайда</h1>
+        <p class="data">Осень | 2025 | 12 эпизодов | 16+</p>
+        <p class="genre">Жанр: Фантастика</p>
+
+        <!-- single description paragraph restored -->
+        <p class="description">
+          Описание: это высказывание, которое состоит из двух и более
+          предложений. Для того чтобы верно определить, перед нами текст или
+          набор предложений, необходимо помнить про ключевые признаки текста:
+          предложения объединены общей темой. В тексте можно выделить главную
+          мысль, то есть то важное, что хотел сказать автор читателю. Этот
+          второй абзац продолжает описание и даёт дополнительные детали — можно
+          использовать его для сеттинга, заметок о производстве или коротких
+          рецензий. Держите текст кратким, чтобы визуально было легче
+          воспринимать содержимое слайда.
+        </p>
+
+        <!-- Indicators inside the box, centered -->
+        <div class="indicators" aria-hidden="false">
+          <span class="indicator-line active" data-index="0"></span>
+          <span class="indicator-line" data-index="1"></span>
+          <span class="indicator-line" data-index="2"></span>
+          <span class="indicator-line" data-index="3"></span>
+        </div>
+
+        <!-- Slider controls (bottom-right) with icon buttons -->
+        <div class="slider-controls" role="group" aria-label="Slider controls">
+          <button class="ctrl prev" aria-label="Previous slide">
+            <!-- left chevron SVG -->
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="ctrl next" aria-label="Next slide">
+            <!-- right chevron SVG -->
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="newEpisodes">
+      <div class="container">
+        <div class="title">
+          <h1 class="New">Новые эпизоды ></h1>
+          <p class="desc">Самые свежие и новые эпизоды</p>
+        </div>
+        <div class="episodes-grid">
+          <div class="card">
+            <div class="Name">Название 1</div>
+            <div class="card-bottom">
+              <p class="info">Осень | 2025 | 12 эпизодов | 16+</p>
+              <p class="genre">Жанр: Фантастика</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 2</div>
+            <div class="card-bottom">
+              <p class="info">Зима | 2024 | 24 эпизода | 13+</p>
+              <p class="genre">Жанр: Приключения</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 3</div>
+            <div class="card-bottom">
+              <p class="info">Весна | 2023 | Фильм | 18+</p>
+              <p class="genre">Жанр: Драма</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 4</div>
+            <div class="card-bottom">
+              <p class="info">Лето | 2022 | 1 эпизод | 0+</p>
+              <p class="genre">Жанр: Комедия</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 5</div>
+            <div class="card-bottom">
+              <p class="info">Осень | 2021 | 10 эпизодов | 16+</p>
+              <p class="genre">Жанр: Триллер</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 6</div>
+            <div class="card-bottom">
+              <p class="info">Весна | 2020 | 8 эпизодов | 12+</p>
+              <p class="genre">Жанр: Мистика</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 7</div>
+            <div class="card-bottom">
+              <p class="info">Зима | 2024 | 24 эпизода | 18+</p>
+              <p class="genre">Жанр: Драма</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="Name">Название 8</div>
+            <div class="card-bottom">
+              <p class="info">Лето | 2018 | 20 эпизодов | 12+</p>
+              <p class="genre">Жанр: Фэнтези</p>
+              <div class="buttons">
+                <a href="/pages/watch.html" class="btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </a>
+                <button class="btn">
+                  <img src="/icons/favorite.png" alt="favorite icon" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advertisment">
+          <h1 class="Ad">Реклама</h1>
+        </div>
+      </div>
+    </div>
+    <div class="youtubeChann">
+      <div class="container">
+        <div class="title">
+          <h1 class="YouTube">Наш YouTube канал ></h1>
+          <p class="desc">Все про аниме, обзоры, новости и многое другое!</p>
+        </div>
+        <div class="cards">
+          <div
+            class="card"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&h=600&fit=crop');
+            "
+          >
+            <div class="infos">
+              <h1 class="name">Название</h1>
+              <p class="channel-name">Sky Dub Channel</p>
+              <div class="chats-views">
+                <div class="comments">
+                  <img src="icons/comments.png" alt="comments icon" />
+                  <span>1234</span>
+                </div>
+                <div class="views">
+                  <img src="icons/views.png" alt="views icon" />
+                  <span>5678</span>
+                </div>
+              </div>
+              <div class="watch">
+                <button class="watch-btn">
+                  <img src="/icons/play.png" alt="play icon" />Смотреть
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop');
+            "
+          >
+            <div class="infos">
+              <h1 class="name">Название</h1>
+              <p class="channel-name">Sky Dub Channel</p>
+              <div class="chats-views">
+                <div class="comments">
+                  <img src="/icons/comments.png" alt="comments icon" />
+                  <span>856</span>
+                </div>
+                <div class="views">
+                  <img src="/icons/views.png" alt="views icon" />
+                  <span>3421</span>
+                </div>
+              </div>
+              <div class="watch">
+                <button class="watch-btn">
+                  <img src="/icons/play.png" alt="play icon" /> Смотреть
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop');
+            "
+          >
+            <div class="infos">
+              <h1 class="name">Название</h1>
+              <p class="channel-name">Sky Dub Channel</p>
+              <div class="chats-views">
+                <div class="comments">
+                  <img src="icons/comments.png" alt="comments icon" />
+                  <span>567</span>
+                </div>
+                <div class="views">
+                  <img src="icons/views.png" alt="views icon" />
+                  <span>2198</span>
+                </div>
+              </div>
+              <div class="watch">
+                <button class="watch-btn">
+                  <img src="icons/play.png" alt="play icon" /> Смотреть
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="genres">
+      <div class="container">
+        <div class="title">
+          <h1 class="Genres">Жанры ></h1>
+          <p class="desc">Выберите ваш любимый жанр</p>
+        </div>
+        <div class="cards">
+          <div class="card" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=600&fit=crop');">
+            <div class="overlay">
+              <h2 class="genre-name">Аниме</h2>
+              <div class="releases"><p>Релизы: 120</p></div>
+            </div>
+          </div>
+          <div class="card" style="background-image: url('https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=800&h=600&fit=crop');">
+            <div class="overlay">
+              <h2 class="genre-name">Фантастика</h2>
+              <div class="releases"><p>Релизы: 98</p></div>
+            </div>
+          </div>
+          <div class="card" style="background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&h=600&fit=crop');">
+            <div class="overlay">
+              <h2 class="genre-name">Приключения</h2>
+              <div class="releases"><p>Релизы: 76</p></div>
+            </div>
+          </div>
+          <div class="card" style="background-image: url('https://images.unsplash.com/photo-1526312426976-593c2d0fb2cc?w=800&h=600&fit=crop');">
+            <div class="overlay">
+              <h2 class="genre-name">Драма</h2>
+              <div class="releases"><p>Релизы: 64</p></div>
+            </div>
+          </div>
+          <div class="card" style="background-image: url('https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=800&h=600&fit=crop');">
+            <div class="overlay">
+              <h2 class="genre-name">Комедия</h2>
+              <div class="releases"><p>Релизы: 142</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <img src="/icons/logo.png" alt="Sky Logo" class="footer-logo" />
+            <div class="footer-brand">
+              <h1 class="footer-brand-name">Sky Dub Studio</h1>
+              <p class="footer-brand-desc">Сайт для удобного просмотра совершенно бесплатно</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-section">
+              <h3 class="footer-section-title">Навигация</h3>
+              <ul class="footer-menu">
+                <li><a href="/pages/index.html">Главная</a></li>
+                <li><a href="/pages/Releases.html">Релизы</a></li>
+                <li><a href="/pages/Расписание.html">Расписание</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-section-title">Пользователь</h3>
+              <ul class="footer-menu">
+                <li><a href="/pages/login.html">Войти в аккаунт</a></li>
+                <li><a href="/pages/register.html">Регистрация</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p class="footer-social-text">Следите за нами через наши социальные сети:</p>
+            <div class="footer-social-icons">
+              <a href="#" class="social-icon">
+                <img src="/icons/telegram.png" alt="Telegram" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/icons/youtube.png" alt="YouTube" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/icons/discord.png" alt="Discord" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="/icons/instagram.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-bottom-right">
+            <p class="footer-copyright">© 2025 Sky Dub Studio. Все права защищены.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
